@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>R.K INDUSTRIES</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/rklogo.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+<!-- Social Media Popup -->
+<div class="social-popup">
+  <div class="social-icons">
+    <a href="https://www.facebook.com" class="social-icon facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" class="social-icon instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="tel:+91 9891273853" class="social-icon phone">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/9891273853" class="social-icon whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+<header class="navbar">
+<a href="index.html" style="text-decoration: none; color: inherit;">
+  <div class="logo">
+    <img src="images/rklogo.png" alt="Logo" />
+    <h1>R.K. Industries</h1>
+  </div>
+</a>
+  
+<!-- <div class="logo">
+    <img src="images/rklogo.png" alt="Logo" />
+    <h1>R.K. Industries</h1>
+    
+  </div> -->
+
+  <button class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav-menu" id="nav-menu">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About</a></li>
+      <li class="dropdown">
+        <a href="#">Products</a>
+        <ul class="dropdown-menu">
+          <li><a href="id-fans.html">ID FAN</a></li>
+          <li><a href="fd-fans.html">FD FAN</a></li>
+          <li><a href="axial-fans.html">AXIAL FAN</a></li>
+          <li><a href="air-washer.html">AIR WASHER</a></li>
+          <li><a href="wet-scrubber.html">WET SCRUBBER</a></li>
+        </ul>
+      </li>
+      <!-- <li><a href="#">Clients</a></li> -->
+      <li><a href="contact-us.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  dropdowns.forEach(drop => {
+    drop.addEventListener('click', function (e) {
+      if (window.innerWidth <= 991) {
+        e.preventDefault(); // Prevent navigating
+        drop.classList.toggle('open');
+      }
+    });
+  });
+</script>
+
+
+
+
+    <div class="prodis-container">
+        <!-- Product Hero Section -->
+        <section class="prodis-hero">
+            <div class="prodis-gallery">
+                <img src="images/axial-fan-removebg-preview.png" alt="ID Fan" class="prodis-main-image" id="prodis-mainImg">
+                <div class="prodis-thumbnails">
+                    <img src="images/axial-fan-removebg-preview.png" alt="ID Fan Front View" class="prodis-thumb active" onclick="prodis_changeImage(this, 'images/axial-fan-removebg-preview.png')">
+                    <!-- <img src="images/id.png" alt="ID Fan Side View" class="prodis-thumb" onclick="prodis_changeImage(this, 'images/id.png')">
+                    <img src="images/FD12.png" alt="ID Fan Technical View" class="prodis-thumb" onclick="prodis_changeImage(this, 'images/FD12.png')">
+                    <img src="images/industr.png" alt="ID Fan Installation" class="prodis-thumb" onclick="prodis_changeImage(this, 'images/industr.png')"> -->
+                </div>
+            </div>
+            
+            <div class="prodis-info">
+                <h1 class="prodis-title">Axial Fans</h1>
+                <h2 class="prodis-subtitle">High-Efficiency Industrial Ventilation Solution</h2>
+                <!-- <div class="prodis-price">Starting at ₹85,000</div> -->
+                
+                <p class="prodis-desc">
+The simplicity in design, the efficiency of energy consumption, and volume of airflow produced combine to ensure axial fans are a favorite within commercial and industrial applications.  As a respected Axial fan supplier in India, we supply several types of axial fans in all types of environments, from industrial manufacturers to HVAC to agricultural products.  
+<br>
+As an Axial fan manufacturer in India, we ensure that when our fans are delivered to customers, they will be a reliable and high-performing product consistent with the operational and environmental needs.
+                </p>
+                
+                <div class="prodis-features">
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Enhanced Combustion</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Lower Maintenance Cost</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Environmental Compliance</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Air Quality Improvement</span>
+                    </div>
+                </div>
+                
+                <a href="#prodis-contact" class="prodis-cta">Request Quote</a>
+            </div>
+        </section>
+
+        <!-- Product Description Section -->
+        <section class="prodis-section">
+            <h2 class="prodis-section-title">Product Description</h2>
+            <p class="prodis-desc">
+As an Axial fan manufacturer in India, Our Axial fans play a well-known role in commercial applications and in industries where the inherent characteristics of airflow at low pressure are needed. Typical applications of this fan may include air circulation in factories, ventilation in commercial buildings, cooling in HVAC systems and cooling towers, exhaust in boiler rooms, and room ventilation.
+            </p>
+            <p class="prodis-desc">
+These pointed fans are extensively applied for the elimination of clean air, diminishing heat, and creating a regulated environment. As an Axial fan supplier in India, With their relatively low cost, general reliability, quiet operation, low maintenance, ease of installation, and total energy efficiency, they are an effective solution for many commercial and industrial applications. 
+            </p>
+            <p class="prodis-desc">
+Electrical signals can be transmitted from one location to another with axial cables with little loss or interference. As an Axial fan trader in India "Axial" refers to the fact that the cable is constructed with layers encircling a central axis. </p>
+            <div class="prodis-features">
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Axial fans are used in factories and workshops for cooling machines, ventilating workspaces, and removing fumes or dust, ensuring a safe working environment.</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>In malls, offices, and server rooms, axial fans help maintain consistent airflow and prevent overheating of electronic equipment.</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Axial fans are essential in HVAC systems for air circulation and in exhaust systems for removing stale or hot air efficiently.</span>
+                    </div>
+                    <!-- <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Properly designed Axial Fans support cleaner emissions and help maintain compliance with environmental regulations.</span>
+                    </div> -->
+                </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="prodis-section">
+            <h2 class="prodis-section-title">Technical Specifications</h2>
+            <table class="prodis-specs"> 
+    <tr>
+        <th>Brand</th>
+        <td>RK Industries</td>
+    </tr>
+    <tr>
+        <th>Material</th>
+        <td>Stainless Steel</td>
+    </tr>
+    <tr>
+        <th>Electric Current Type</th>
+        <td>AC</td>
+    </tr>
+    <tr>
+        <th>Mounting</th>
+        <td>Duct Mounted Fan</td>
+    </tr>
+    <tr>
+        <th>Fan Speed</th>
+        <td>3000 RPM</td>
+    </tr>
+    <tr>
+        <th>Pressure</th>
+        <td>Induced Draft Pressure</td>
+    </tr>
+    <tr>
+        <th>Usage/Application</th>
+        <td>Industrial</td>
+    </tr>
+    <tr>
+        <th>Motor Power</th>
+        <td>2-10 HP</td>
+    </tr>
+</table>
+
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="prodis-section">
+            <h2 class="prodis-section-title">Product Gallery</h2>
+            <div class="prodis-gallery-grid">
+                <div class="prodis-gallery-item">
+                    <img src="images/id fan.jpg" alt="ID Fan Front View" class="prodis-gallery-img">
+                </div>
+                <div class="prodis-gallery-item">
+                    <img src="images/id.png" alt="ID Fan Installation" class="prodis-gallery-img">
+                </div>
+                <div class="prodis-gallery-item">
+                    <img src="images/fd12.png" alt="ID Fan Technical Drawing" class="prodis-gallery-img">
+                </div>
+                <div class="prodis-gallery-item">
+                    <img src="images/industr.png" alt="ID Fan in Industrial Setting" class="prodis-gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="prodis-section">
+            <h2 class="prodis-section-title">Applications</h2>
+            <p class="prodis-desc">
+Axial Fans work on the Bernoulli principle, which states that air molecules gain momentum when fan blades rotate. As an Axial fan trader in India Among the essential operational traits are:
+            </p>
+            <!-- <div class="prodis-features">
+                <div class="prodis-feature">
+                    <i class="fas fa-industry"></i>
+                    <span>Power plant boiler exhaust systems</span>
+                </div>
+                <div class="prodis-feature">
+                    <i class="fas fa-fire"></i>
+                    <span>Industrial furnace applications</span>
+                </div>
+                <div class="prodis-feature">
+                    <i class="fas fa-recycle"></i>
+                    <span>Waste heat recovery systems</span>
+                </div>
+                <div class="prodis-feature">
+                    <i class="fas fa-smog"></i>
+                    <span>Pollution control equipment</span>
+                </div>
+                <div class="prodis-feature">
+                    <i class="fas fa-warehouse"></i>
+                    <span>Industrial ventilation systems</span>
+                </div>
+            </div> -->
+            <div class="prodis-features">
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Axial cables are built with a central conductive wire, insulation, and shielding layers to ensure interference-free performance—perfect for CCTV, antennas, and AV systems.</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Axial fans provide strong airflow for cooling, exhaust, and ventilation needs, ensuring consistent air quality and preventing equipment overheating in industrial environments.</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Our axial fans are designed for minimal energy consumption, helping reduce electricity bills. Easy installation and low maintenance save both time and money.</span>
+                    </div>
+                    <div class="prodis-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>RK Industries offers durable, efficient, and customizable axial fans that meet specific industry demands—supported by reliable after-sales service and expert technical support.</span>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <script>
+        // Product Image Gallery Functionality
+        function prodis_changeImage(thumb, newImage) {
+            // Update main image
+            document.getElementById('prodis-mainImg').src = newImage;
+            
+            // Update active thumbnail
+            const thumbs = document.querySelectorAll('.prodis-thumb');
+            thumbs.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+    </script>
+
+
+
+  <!-- ============================== -->
+<footer data-aos="fade-in">
+    <div class="footer-container" style="background-image:url(images/pattern-12.png)">
+        <div class="footer-column">
+            <h3>About R.K Industries</h3>
+            <p>R.K INDUSTRIES delivers industrial automation and machinery solutions with precision and reliability
+                for global industries.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <!-- <li><a href="#">Products</a></li>
+                <li><a href="#">Industries</a></li> -->
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Our Products</h3>
+            <ul class="footer-links">
+          <li><a href="id-fans.html">ID FAN</a></li>
+          <li><a href="fd-fans.html">FD FAN</a></li>
+          <li><a href="axial-fans.html">AXIAL FAN</a></li>
+          <li><a href="air-washer.html">AIR WASHER</a></li>
+          <li><a href="wet-scrubber.html">WET SCRUBBER</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-map-marker-alt"></i>S-44, Phase-2, Badli, New Delhi-110042, Delhi, India</p>
+            <p><i class="fas fa-phone"></i> +91 9891273853</p>
+            <p><i class="fas fa-envelope"></i>rkindustriessales@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+    <hr class="custom-hr">
+
+    <div class="copyright">
+        <p>&copy; 2025 R.K INDUSTRIES. All Rights Reserved.<br> 
+  Designed & Managed by 
+  <a href="https://www.promopact.in/" style="color: inherit; text-decoration: none;">
+    Prompact Marketing Pvt. Ltd
+  </a>
+</p>
+
+        <!-- <p>&copy; 2025 R.K INDUSTRIES. All Rights Reserved.<br> Designed & Managed by Prompact Marketing pvt.Ltd</p> -->
+    </div>
+</footer>
+<!-- Link JavaScript file -->
+<script src="script.js"></script>
+      <!-- ================ -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+<script>
+    const counters = document.querySelectorAll('.count');
+    let counterStarted = false;
+
+    function startCounting() {
+        if (counterStarted) return;
+
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const increment = target / 200;
+
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    counter.textContent = Math.ceil(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.textContent = target + '+';
+                }
+            };
+
+            updateCount();
+        });
+
+        counterStarted = true;
+    }
+
+    // Trigger counting when in view
+    function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top < window.innerHeight &&
+            rect.bottom >= 0
+        );
+    }
+
+    window.addEventListener('scroll', () => {
+        const triggerEl = document.querySelector('.counter-item');
+        if (isInViewport(triggerEl)) {
+            startCounting();
+        }
+    });
+</script>
+  
+    <script>
+        let currentSlide = 0;
+            const slides = document.querySelectorAll(".slide");
+            const dots = document.querySelectorAll(".dot");
+            const next = document.querySelector(".arrow-right");
+            const prev = document.querySelector(".arrow-left");
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove("active");
+                    dots[i].classList.remove("active");
+                    if (i === index) {
+                        slide.classList.add("active");
+                        dots[i].classList.add("active");
+                    }
+                });
+                currentSlide = index;
+            }
+
+            next.addEventListener("click", () => {
+                let index = (currentSlide + 1) % slides.length;
+                showSlide(index);
+            });
+
+            prev.addEventListener("click", () => {
+                let index = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(index);
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => showSlide(index));
+            });
+
+            setInterval(() => {
+                let index = (currentSlide + 1) % slides.length;
+                showSlide(index);
+            }, 5000);
+    </script>
+
+</body>
+
+</html>
